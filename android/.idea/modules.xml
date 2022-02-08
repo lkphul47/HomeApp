@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HomeApp.iml" filepath="$PROJECT_DIR$/.idea/modules/HomeApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HomeApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HomeApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1313425688/HomeApp.react-native-community_datetimepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/-1313425688/HomeApp.react-native-community_datetimepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-165577048/HomeApp.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-165577048/HomeApp.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1322195020/HomeApp.react-native-community_netinfo.iml" filepath="$PROJECT_DIR$/.idea/modules/1322195020/HomeApp.react-native-community_netinfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2028866934/HomeApp.react-native-date-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/2028866934/HomeApp.react-native-date-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/808460206/HomeApp.react-native-device-info.iml" filepath="$PROJECT_DIR$/.idea/modules/808460206/HomeApp.react-native-device-info.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-26830871/HomeApp.react-native-document-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/-26830871/HomeApp.react-native-document-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1839656830/HomeApp.react-native-firebase.iml" filepath="$PROJECT_DIR$/.idea/modules/1839656830/HomeApp.react-native-firebase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1083146980/HomeApp.react-native-firebase-push-notifications.iml" filepath="$PROJECT_DIR$/.idea/modules/1083146980/HomeApp.react-native-firebase-push-notifications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1068888879/HomeApp.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/1068888879/HomeApp.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/766897719/HomeApp.react-native-image-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/766897719/HomeApp.react-native-image-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1688840001/HomeApp.react-native-linear-gradient.iml" filepath="$PROJECT_DIR$/.idea/modules/1688840001/HomeApp.react-native-linear-gradient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/998767142/HomeApp.react-native-pager-view.iml" filepath="$PROJECT_DIR$/.idea/modules/998767142/HomeApp.react-native-pager-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/361133799/HomeApp.react-native-push-notification.iml" filepath="$PROJECT_DIR$/.idea/modules/361133799/HomeApp.react-native-push-notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1505831309/HomeApp.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/1505831309/HomeApp.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1356397528/HomeApp.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/1356397528/HomeApp.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/286050800/HomeApp.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/286050800/HomeApp.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-211393912/HomeApp.react-native-share.iml" filepath="$PROJECT_DIR$/.idea/modules/-211393912/HomeApp.react-native-share.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/262896205/HomeApp.react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/262896205/HomeApp.react-native-svg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1902802169/HomeApp.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-1902802169/HomeApp.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-20745141/HomeApp.react-native-view-shot.iml" filepath="$PROJECT_DIR$/.idea/modules/-20745141/HomeApp.react-native-view-shot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-455006622/HomeApp.react-native-webview.iml" filepath="$PROJECT_DIR$/.idea/modules/-455006622/HomeApp.react-native-webview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-265953072/HomeApp.rn-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/-265953072/HomeApp.rn-fetch-blob.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,3 @@
+import ProgressDialog from './src/ProgressDialog';
+
+export default ProgressDialog;
