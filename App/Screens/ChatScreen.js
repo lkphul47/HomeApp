@@ -23,7 +23,7 @@ import { Indicator, showToast, NoData } from '../Common/CommonMethods';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Axios from 'axios'
 import { WebView } from 'react-native-webview';
-import Moment from 'moment';
+
 import Icon2 from 'react-native-vector-icons/FontAwesome'
 import { TextInput } from 'react-native';
 import Icon3 from 'react-native-vector-icons/Ionicons'
@@ -51,6 +51,7 @@ const ChatScreen = ({ navigation, route }) => {
 
         var access = await AsyncStorage.getItem('access')
         var myemail = await AsyncStorage.getItem('email')
+        
         setmyemail(myemail)
         setLoding(true);
 
@@ -70,7 +71,7 @@ const ChatScreen = ({ navigation, route }) => {
         //     formdata.append('attachment', profileImage);
         // }
         // else {
-        formdata.append('attachment', '');
+        // formdata.append('attachment', '');
         // }
         console.log(access);
         console.log(formdata);
@@ -83,7 +84,7 @@ const ChatScreen = ({ navigation, route }) => {
                     setText('')
                 }
             }).catch(function (error) {
-                console.log("KKKLLLL K ", JSON.stringify(error))
+                console.log("KKKLLLL K ", JSON.stringify(error.response))
                 setLoding(false);
                 if (error.response) {
                     if (validationempty(error.response.data.send_to)) {
@@ -99,7 +100,6 @@ const ChatScreen = ({ navigation, route }) => {
     }
     const getMessageList = async () => {
         var access = await AsyncStorage.getItem('access')
-        var pk = await AsyncStorage.getItem('pk')
         
         setLoding(true);
 
@@ -109,8 +109,8 @@ const ChatScreen = ({ navigation, route }) => {
         };
         
 
-        console.log("======messages", Urls.baseUrl + 'api/messages/')
-        Axios.get(Urls.baseUrl + 'api/message/', { headers })
+        console.log("======messages", Urls.baseUrl + 'api/messages/'+route.params.item.pk,headers)
+        Axios.get(Urls.baseUrl + 'api/messages/'+route.params.item.pk, { headers })
             .then(response => {
                 setLoding(false);
                 console.log(response.data)
