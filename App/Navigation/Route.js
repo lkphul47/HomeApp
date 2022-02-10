@@ -17,6 +17,8 @@ import HomeOwnerReport from '../Screens/HomeOwnerReport';
 import HomeBuilderReport from '../Screens/HomeBuilderReport';
 import Buildphase from '../Screens/Buildphase';
 import Messages from '../Screens/Messages';
+import ChatScreen from '../Screens/ChatScreen';
+
 import Schedule from '../Screens/Schedule';
 import Schedule1 from '../Screens/Schedule1';
 import Headline from '../Screens/Headline';
@@ -137,6 +139,7 @@ const Route = () => (
     <Stack.Navigator initialRouteName='Splash' >
       <Stack.Screen name='Splash' component={Splash} options={{ headerShown: false }} />
       <Stack.Screen name='Register' component={Register} options={{ headerShown: false }} />
+      <Stack.Screen name='ChatScreen' component={ChatScreen} options={{ headerShown: false }} />
       <Stack.Screen name='Login' component={Login} options={{ headerShown: false }} />
       <Stack.Screen name='Home' component={TabStack} options={{ headerShown: false }} />
       <Stack.Screen name='HomeOwnerReport' component={HomeOwnerReport} options={{ headerShown: false }} />

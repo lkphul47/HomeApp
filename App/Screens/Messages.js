@@ -31,10 +31,12 @@ const Home = ({ navigation, route }) => {
     const [isLoding, setLoding] = useState(false);
     const [userArray, setuserArray] = useState([])
     const [linkname, setlinkname] = useState('')
-
-    useEffect(() => {
+    const [myemail, setmyemail] = useState('');
+    useEffect(async() => {
         setlinkname('')
         apiCall_messages()
+        var myemail = await AsyncStorage.getItem('email')
+        setmyemail(myemail)
     }, []);
 
     useEffect(() => { }, [linkname]);
@@ -53,7 +55,7 @@ const Home = ({ navigation, route }) => {
         Axios.get(Urls.baseUrl + 'api/messages/', { headers })
             .then(response => {
                 setLoding(false);
-                console.log("======messages", response.data)
+                console.log("======messages data", response.data)
                 if (response.data != null) { setuserArray(response.data) }
 
             }).catch(function (error) {
@@ -114,7 +116,7 @@ const Home = ({ navigation, route }) => {
                                         flex: 1, 
                                         flexDirection: 'row', paddingVertical: 10,borderBottomWidth:1, borderBottomColor:'lightgrey',borderRadius:10
                                     }}
-                                    onPress={()=>{navigation.navigate('MessageFullView',{message:item})}}>
+                                    onPress={()=>{navigation.navigate('ChatScreen',{item:item})}}>
                                     <View style={{ height: 50,justifyContent:'center',alignItems:'center', width: 50,marginLeft:10, backgroundColor: 'lightgrey', borderRadius: 100, borderColor: 'black' }} >
                                     <Text style={[Style.text18, { color: Colors.TheamColor2 }]}>{item.subject[0]}</Text>
 
@@ -124,7 +126,7 @@ const Home = ({ navigation, route }) => {
                                             <Text style={[Style.text18, { flex: 1, color: Colors.TheamColor2 }]} numberOfLines={2}>{item.subject}</Text>
                                             <Text style={[Style.text14]}>{Moment(item.created_at).format('yyyy-MM-DD ')}</Text>
                                         </View>
-                                        <Text style={[Style.text16, {paddingTop:10, flex: 1 }]}>{item.send_by}</Text>
+                                        <Text style={[Style.text16, {paddingTop:10, flex: 1 }]}>{item.send_to==myemail?item.send_by:item.send_to}</Text>
                                     </View>
 
                                     {/* {validationempty(item.attachment) ? <Icon type='entypo' name="attachment" size={15}
