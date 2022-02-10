@@ -114,7 +114,7 @@ const Home = ({ navigation, route }) => {
                                         flex: 1, 
                                         flexDirection: 'row', paddingVertical: 10,borderBottomWidth:1, borderBottomColor:'lightgrey',borderRadius:10
                                     }}
-                                    onPress={()=>{navigation.navigate('MessageFullView',{message:item})}}>
+                                    onPress={()=>{navigation.navigate('ChatScreen',{item:item})}}>
                                     <View style={{ height: 50,justifyContent:'center',alignItems:'center', width: 50,marginLeft:10, backgroundColor: 'lightgrey', borderRadius: 100, borderColor: 'black' }} >
                                     <Text style={[Style.text18, { color: Colors.TheamColor2 }]}>{item.subject[0]}</Text>
 

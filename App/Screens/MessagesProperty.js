@@ -121,7 +121,7 @@ const Home = ({ navigation, route }) => {
                                         flex: 1, borderBottomWidth: 1, borderColor: Colors.divider,
                                         flexDirection: 'row', paddingVertical: 10
                                     }}
-                                    onPress={()=>navigation.navigate('MessageFullView',{message:item})}>
+                                    onPress={()=>navigation.navigate('ChatScreen',{item:item})}>
                                     <Text style={[Style.text14, { flex: 1 }]}>{item.created_at}</Text>
                                     <Text style={[Style.text14, { marginHorizontal: 6, flex: 1 }]}>{item.send_by}</Text>
                                     <Text style={[Style.text14, { color: Colors.TheamColor2, flex: 1.5 }]}>{item.subject}</Text>
